@@ -23,13 +23,16 @@
         {{-- HeaderTop Sosyal Medya::Son --}}
         {{-- HeaderTop Logo::Başlangıç --}}
         <div class="header__top__logo__area">
-            <img id="header__top__logo" src="" alt="blog__logo">
+           {{-- <img id="header__top__logo" src="" alt="blog__logo"> --}}
+           <p>BLOG WEB SİTEM</p>
         </div>
         {{-- HeaderTop Logo::Son --}}
         {{-- HeaderTop İkon::Başlangıç --}}
         <div class="header__top__icon__area">
             <a class="header__top__icon" href=""><i class="bi bi-person-circle"></i></a>
             <a class="header__top__icon" href=""><i class="bi bi-search"></i></a>
+            <a class="header__top__mobile__menu" href=""><i class="bi bi-list"></i></a>
+
         </div>
         {{-- HeaderTop İkon::Son --}}
     </div>
