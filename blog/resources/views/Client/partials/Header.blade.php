@@ -1,4 +1,39 @@
 <header id="header" class="header">
+    {{-- Mobile Menu::Başlangıç --}}
+    <div class="mobile__menu__wrapper">
+        <div class="mobile__menu__logo">
+            <span>BLOG WEB SİTEM</span>
+            <a class="mobile__menu__close__button"><i class="bi bi-x-lg"></i></a>
+        </div>
+        <div class="mobile__menu__main__list">
+            <ul class="mobile__menu__main__list__wrapper">
+                <li><a class="mobile__menu__main__link" href="">Anasayfa</a></li>
+                <li><a class="mobile__menu__main__link" href="">Gelecek</a></li>
+                <li><a class="mobile__menu__main__link" href="">Kültür Sanat</a></li>
+                <li><a class="mobile__menu__main__link" href="">Spor</a></li>
+                <li><a class="mobile__menu__main__link" href="">Bilim ve Teknoloji</a></li>
+                <li><a class="mobile__menu__main__link" href="">Çevre</a></li>
+                <li><a class="mobile__menu__main__link" href="">Eğitim</a></li>
+                <li><a class="mobile__menu__main__link" href="">Yaşam</a></li>
+            </ul>
+        </div>
+        <div class="mobile__menu__search">
+           <div class="mobile__menu__search__item">
+              <input id="mobile__menu__search__input" type="text" placeholder="Ne Arıyorsun ?">
+              <a id="mobile__menu__search__icon" href=""><i class="bi bi-search"></i></a>
+            </div>
+        </div>
+        <div class="mobile__menu__social__media">
+            <ul>
+                <li><a class="mobile__menu__social__media__item" href=""> <i class="bi bi-facebook"></i></a></li>
+                <li><a class="mobile__menu__social__media__item" href=""><i class="bi bi-twitter-x"></i></a></li>
+                <li><a class="mobile__menu__social__media__item" href=""> <i class="bi bi-youtube"></i></a></li>
+                <li><a class="mobile__menu__social__media__item" href=""> <i class="bi bi-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    {{-- Mobile Menu::Son -- }}
     {{-- Header Top::Başlangıç --}}
     <div class="header__top">
         {{-- HeaderTop Sosyal Medya::Başlangıç --}}
