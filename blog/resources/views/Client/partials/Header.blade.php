@@ -32,7 +32,6 @@
             </ul>
         </div>
     </div>
-    
     {{-- Mobile Menu::Son -- }}
     {{-- Header Top::Başlangıç --}}
     <div class="header__top">
@@ -75,15 +74,42 @@
     {{-- Header Bottom::Başlangıç --}}
     <div class="header__bottom">
             <ul class="header__bottom__menu__list">
-                <li><a class="header__bottom__menu__link" href="">Anasayfa</a></li>
-                <li><a class="header__bottom__menu__link" href="">Gelecek</a></li>
-                <li><a class="header__bottom__menu__link" href="">Tarih</a></li>
-                <li><a class="header__bottom__menu__link" href="">Kültür-Sanat</a></li>
-                <li><a class="header__bottom__menu__link" href="">Spor</a></li>
-                <li><a class="header__bottom__menu__link" href="">Bilim ve Teknoloji</a></li>
-                <li><a class="header__bottom__menu__link" href="">Çevre</a></li>
-                <li><a class="header__bottom__menu__link" href="">Eğitim</a></li>
-                <li><a class="header__bottom__menu__link" href="">Yaşam</a></li>
+                <li class="header__bottom__menu">
+                    <a class="header__bottom__menu__link" href="">Anasayfa</a>
+                    <span class="header__bottom__menu__bottom"></span>
+                </li>
+                <li class="header__bottom__menu">
+                    <a class="header__bottom__menu__link" href="">Gelecek</a>
+                    <span class="header__bottom__menu__bottom"></span>
+                </li>
+                <li class="header__bottom__menu">
+                    <a class="header__bottom__menu__link" href="">Tarih</a>
+                    <span class="header__bottom__menu__bottom"></span>
+                </li>
+                <li class="header__bottom__menu">
+                    <a class="header__bottom__menu__link" href="">Kültür-Sanat</a>
+                    <span class="header__bottom__menu__bottom"></span>
+                </li>
+                <li class="header__bottom__menu">
+                    <a class="header__bottom__menu__link" href="">Spor</a>
+                    <span class="header__bottom__menu__bottom"></span>
+                </li>
+                <li class="header__bottom__menu">
+                    <a class="header__bottom__menu__link" href="">Bilim ve Teknoloji</a>
+                    <span class="header__bottom__menu__bottom"></span>                
+                </li>
+                <li class="header__bottom__menu">
+                    <a class="header__bottom__menu__link" href="">Çevre</a>
+                    <span class="header__bottom__menu__bottom"></span>
+                </li>
+                <li class="header__bottom__menu">
+                    <a class="header__bottom__menu__link" href="">Eğitim</a>
+                    <span class="header__bottom__menu__bottom"></span>
+                </li>
+                <li class="header__bottom__menu">
+                    <a class="header__bottom__menu__link" href="">Yaşam</a>
+                    <span class="header__bottom__menu__bottom"></span>                
+                </li>
             </ul>
     </div>
     <hr>
