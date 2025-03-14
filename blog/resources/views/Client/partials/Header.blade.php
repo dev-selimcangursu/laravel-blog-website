@@ -3,7 +3,7 @@
     <div class="mobile__menu__wrapper">
         <div class="mobile__menu__logo">
             <span>BLOG WEB SİTEM</span>
-            <a class="mobile__menu__close__button"><i class="bi bi-x-lg"></i></a>
+            <a type="button" class="mobile__menu__close__button"><i class="bi bi-x-lg"></i></a>
         </div>
         <div class="mobile__menu__main__list">
             <ul class="mobile__menu__main__list__wrapper">
@@ -18,6 +18,7 @@
             </ul>
         </div>
         <div class="mobile__menu__search">
+            <h3 style="text-align: center;margin-bottom:10px">Site İçi Arama</h3>
            <div class="mobile__menu__search__item">
               <input id="mobile__menu__search__input" type="text" placeholder="Ne Arıyorsun ?">
               <a id="mobile__menu__search__icon" href=""><i class="bi bi-search"></i></a>
@@ -64,7 +65,7 @@
         {{-- HeaderTop İkon::Başlangıç --}}
         <div class="header__top__icon__area">
             <a class="header__top__icon" href=""><i class="bi bi-person-circle"></i></a>
-            <a class="header__top__icon" href=""><i class="bi bi-search"></i></a>
+            <a class="header__top__icon" id="openSearchModal" href=""><i class="bi bi-search"></i></a>
             <a class="header__top__mobile__menu" href=""><i class="bi bi-list"></i></a>
 
         </div>
@@ -115,3 +116,28 @@
     <hr>
     {{-- Header Bottom::Son --}}
 </header>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let mobileMenuCloseButton = document.querySelector(".mobile__menu__close__button");
+    let mobileMenuWrapper = document.querySelector(".mobile__menu__wrapper");
+    let headerTopMobileMenu = document.querySelector(".header__top__mobile__menu");
+    let openSearchModal = document.querySelector('#openSearchModal');
+
+
+    headerTopMobileMenu.addEventListener("click", function (e) {
+        e.preventDefault();
+        mobileMenuWrapper.classList.add("active");
+    });
+
+    mobileMenuCloseButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        mobileMenuWrapper.classList.remove("active");
+    });
+
+    openSearchModal.addEventListener('click',function(e){
+        e.preventDefault();
+        mobileMenuWrapper.classList.add("active");  
+    })
+});
+
+</script>

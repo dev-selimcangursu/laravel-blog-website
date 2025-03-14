@@ -15,7 +15,119 @@
 }
 /** Mobile Görünüm Style::Başlangıç **/
 .header .mobile__menu__wrapper {
-    display: none !important;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 80px;
+    background-color: black;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: whitesmoke;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+}
+.header .mobile__menu__wrapper.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.header
+    .mobile__menu__wrapper
+    .mobile__menu__main__list
+    .mobile__menu__main__list__wrapper {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 15px;
+    margin-top: 15px;
+}
+.header .mobile__menu__wrapper .mobile__menu__logo span {
+    font-size: 24px;
+}
+.header
+    .mobile__menu__wrapper
+    .mobile__menu__main__list
+    .mobile__menu__main__list__wrapper
+    .mobile__menu__main__link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.header
+    .mobile__menu__wrapper
+    .mobile__menu__main__list
+    .mobile__menu__main__list__wrapper
+    .mobile__menu__main__link:hover {
+    font-weight: bolder;
+    color: red;
+}
+.header .mobile__menu__wrapper .mobile__menu__search {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.header
+    .mobile__menu__wrapper
+    .mobile__menu__search
+    .mobile__menu__search__item {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+#mobile__menu__search__icon {
+    color: whitesmoke;
+    padding-right: 10px;
+}
+#mobile__menu__search__input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 5px;
+    color: whitesmoke;
+}
+.header .mobile__menu__wrapper .mobile__menu__logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.mobile__menu__close__button {
+    color: whitesmoke;
+    font-size: 24px;
+}
+#mobile__menu__search__input:focus {
+    outline: none;
+    box-shadow: none;
+}
+.header .mobile__menu__wrapper .mobile__menu__social__media ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    font-size: 15px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+.header
+    .mobile__menu__wrapper
+    .mobile__menu__social__media
+    ul
+    li
+    .mobile__menu__social__media__item {
+    color: whitesmoke;
 }
 /** Mobile Görünüm Style::Son **/
 
@@ -128,112 +240,6 @@
         display: none;
     }
     /** Header Mobile::Son **/
-    /** Mobile Görünüm Style::Başlangıç **/
-    .header .mobile__menu__wrapper {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 20px;
-        background-color: black;
-        overflow: hidden;
-        box-sizing: border-box;
-        color: whitesmoke;
-        display: flex !important;
-        flex-direction: column;
-    }
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__main__list
-        .mobile__menu__main__list__wrapper {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        gap: 15px;
-        margin-top: 15px;
-    }
-    .header .mobile__menu__wrapper .mobile__menu__logo span {
-        font-size: 24px;
-    }
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__main__list
-        .mobile__menu__main__list__wrapper
-        .mobile__menu__main__link {
-        color: whitesmoke;
-        text-decoration: none;
-    }
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__main__list
-        .mobile__menu__main__list__wrapper
-        .mobile__menu__main__link:hover {
-        font-weight: bolder;
-        color: red;
-    }
-    .header .mobile__menu__wrapper .mobile__menu__search {
-        width: 100%;
-        margin-top: 10px;
-    }
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__search
-        .mobile__menu__search__item {
-        width: 100%;
-        border: 1px solid gray;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row;
-        padding: 5px;
-    }
-    #mobile__menu__search__icon {
-        color: whitesmoke;
-        padding-right: 10px;
-    }
-    #mobile__menu__search__input {
-        background-color: transparent;
-        border: none;
-        width: 100%;
-        border-radius: 20px;
-        padding-left: 5px;
-        color: whitesmoke;
-    }
-    .header .mobile__menu__wrapper .mobile__menu__logo {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .mobile__menu__close__button {
-        color: whitesmoke;
-        font-size: 24px;
-    }
-    #mobile__menu__search__input:focus {
-        outline: none;
-        box-shadow: none;
-    }
-    .header .mobile__menu__wrapper .mobile__menu__social__media ul {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        font-size: 15px;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-        margin-top: 12px;
-    }
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__social__media
-        ul
-        li
-        .mobile__menu__social__media__item {
-        color: whitesmoke;
-    }
-    /** Mobile Görünüm Style::Son **/
 }
 @media (min-width: 481px) and (max-width: 768px) {
     /** Header Mobile::Başlangıç **/
@@ -245,113 +251,6 @@
         color: #333;
     }
     /** Header Mobile::Son **/
-    /** Mobile Görünüm Style::Başlangıç **/
-    .header .mobile__menu__wrapper {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 20px;
-        background-color: black;
-        overflow: hidden;
-        box-sizing: border-box;
-        color: whitesmoke;
-        display: flex !important;
-        flex-direction: column;
-    }
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__main__list
-        .mobile__menu__main__list__wrapper {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        gap: 15px;
-        margin-top: 15px;
-    }
-    .header .mobile__menu__wrapper .mobile__menu__logo span {
-        font-size: 24px;
-    }
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__main__list
-        .mobile__menu__main__list__wrapper
-        .mobile__menu__main__link {
-        color: whitesmoke;
-        text-decoration: none;
-    }
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__main__list
-        .mobile__menu__main__list__wrapper
-        .mobile__menu__main__link:hover {
-        font-weight: bolder;
-        color: red;
-    }
-    .header .mobile__menu__wrapper .mobile__menu__search {
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__search
-        .mobile__menu__search__item {
-        width: 100%;
-        border: 1px solid gray;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row;
-        padding: 5px;
-    }
-    #mobile__menu__search__icon {
-        color: whitesmoke;
-        padding-right: 10px;
-    }
-    #mobile__menu__search__input {
-        background-color: transparent;
-        border: none;
-        width: 100%;
-        border-radius: 20px;
-        padding-left: 5px;
-        color: whitesmoke;
-    }
-    .header .mobile__menu__wrapper .mobile__menu__logo {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .mobile__menu__close__button {
-        color: whitesmoke;
-        font-size: 24px;
-    }
-    #mobile__menu__search__input:focus {
-        outline: none;
-        box-shadow: none;
-    }
-    .header .mobile__menu__wrapper .mobile__menu__social__media ul {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        gap: 15px;
-        font-size: 15px;
-        list-style: none;
-        justify-content: center;
-        align-items: center;
-        margin-top: 12px;
-    }
-    .header
-        .mobile__menu__wrapper
-        .mobile__menu__social__media
-        ul
-        li
-        .mobile__menu__social__media__item {
-        color: whitesmoke;
-    }
-    /** Mobile Görünüm Style::Son **/
 }
 @media (min-width: 769px) and (max-width: 1024px) {
 }
