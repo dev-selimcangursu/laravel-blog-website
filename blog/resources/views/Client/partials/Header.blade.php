@@ -117,27 +117,29 @@
     {{-- Header Bottom::Son --}}
 </header>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
+    // Mobile Görünüm Aktif Pasif Hale Getirme::Başlangıç
     let mobileMenuCloseButton = document.querySelector(".mobile__menu__close__button");
     let mobileMenuWrapper = document.querySelector(".mobile__menu__wrapper");
     let headerTopMobileMenu = document.querySelector(".header__top__mobile__menu");
     let openSearchModal = document.querySelector('#openSearchModal');
 
-
     headerTopMobileMenu.addEventListener("click", function (e) {
         e.preventDefault();
         mobileMenuWrapper.classList.add("active");
     });
-
     mobileMenuCloseButton.addEventListener("click", function (e) {
         e.preventDefault();
         mobileMenuWrapper.classList.remove("active");
     });
+    // Mobile Görünüm Aktif Pasif Hale Getirme::Son
 
+    // Search Butonuna Basıldığında Mobile Görünüm Aktif Hale Getirilme:Başlangıç
     openSearchModal.addEventListener('click',function(e){
         e.preventDefault();
         mobileMenuWrapper.classList.add("active");  
     })
+    // Search Butonuna Basıldığında Mobile Görünüm Aktif Hale Getirilme:Son
 });
 
 </script>
