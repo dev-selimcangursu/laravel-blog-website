@@ -4,49 +4,48 @@
         <div class="footer__top__about">
             <img class="footer__top__about__image" src="" alt="Blog Website">
             <p class="footer__top__about__address">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores?</p>
-             <br>
-            <p >Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. </p>
+        
             
         </div>
         <div class="footer__top__latest__blogs">
             <h3>Son Yazılar</h3>
             <div class="footer__top__latest_blog">
-                <img style="border: 1px solid whitesmoke" src="" alt="image">
+                <img style="border: 1px solid whitesmoke" src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg?uid=R190373578&ga=GA1.1.655176800.1740923195&semt=ais_hybrid" alt="image">
                 <div class="footer__top__latest__blog__main">
                     <span>Lorem ipsum dolor sit.</span>
                     <div class="footer__top__latest__blog__main__bottom">
                         <span>30 Mart 2025</span>
-                        <span><i class="bi bi-chat"></i></span>
+                        <span><i class="bi bi-chat"></i><small>54</small></span>
                     </div>
                 </div>
             </div>
             <div class="footer__top__latest_blog">
-                <img style="border: 1px solid whitesmoke" src="" alt="image">
+                <img style="border: 1px solid whitesmoke" src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg?uid=R190373578&ga=GA1.1.655176800.1740923195&semt=ais_hybrid" alt="image">
                 <div class="footer__top__latest__blog__main">
                     <span>Lorem ipsum dolor sit.</span>
                     <div class="footer__top__latest__blog__main__bottom">
                         <span>30 Mart 2025</span>
-                        <span><i class="bi bi-chat"></i></span>
+                        <span><i class="bi bi-chat"></i><small>2</small></span>
                     </div>
                 </div>
             </div>
             <div class="footer__top__latest_blog">
-                <img style="border: 1px solid whitesmoke" src="" alt="image">
+                <img style="border: 1px solid whitesmoke" src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg?uid=R190373578&ga=GA1.1.655176800.1740923195&semt=ais_hybrid" alt="image">
                 <div class="footer__top__latest__blog__main">
                     <span>Lorem ipsum dolor sit.</span>
                     <div class="footer__top__latest__blog__main__bottom">
                         <span>30 Mart 2025</span>
-                        <span><i class="bi bi-chat"></i></span>
+                        <span><i class="bi bi-chat"></i><small>88</small></span>
                     </div>
                 </div>
             </div>
             <div class="footer__top__latest_blog">
-                <img style="border: 1px solid whitesmoke" src="" alt="image">
+                <img style="border: 1px solid whitesmoke" src="https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg?uid=R190373578&ga=GA1.1.655176800.1740923195&semt=ais_hybrid" alt="image">
                 <div class="footer__top__latest__blog__main">
                     <span>Lorem ipsum dolor sit.</span>
                     <div class="footer__top__latest__blog__main__bottom">
                         <span>30 Mart 2025</span>
-                        <span><i class="bi bi-chat"></i></span>
+                        <span><i class="bi bi-chat"></i><small>102</small></span>
                     </div>
                 </div>
             </div>
